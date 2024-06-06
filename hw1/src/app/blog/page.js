@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function Blog() {
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 flex flex-col min-h-screen">
             <Head>
                 <title>Blog Posts | My Blog</title>
                 <meta name="description" content="List of blog posts"/>

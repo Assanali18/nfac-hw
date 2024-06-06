@@ -14,7 +14,7 @@ export default function BlogPage() {
     if (!post) return <p className="text-red-500 text-center mt-4">Post not found</p>;
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="mx-auto p-4 flex flex-col min-h-screen" >
             <Head>
                 <title>{post.title} | My Blog</title>
                 <meta name="description" content={post.description}/>
