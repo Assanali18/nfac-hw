@@ -32,6 +32,17 @@ export default function Navbar() {
                     </Link>
                 </nav>
             </div>
+            <nav className="hidden lg:flex lg:items-center lg:space-x-4">
+                <Link href="/" className="px-6 py-2 hover:text-indigo-500">
+                    Home
+                </Link>
+                <Link href="/about" className="px-6 py-2 hover:text-indigo-500">
+                    About
+                </Link>
+                <Link href="/blog" className="px-6 py-2 hover:text-indigo-500">
+                    Blog
+                </Link>
+            </nav>
         </div>
     );
 }
