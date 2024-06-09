@@ -1,0 +1,3 @@
+interface HomeProps {
+    posts: Post[];
+}
