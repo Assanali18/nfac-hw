@@ -1,7 +1,9 @@
+
 import axios from 'axios';
 
+
 const axiosInstance = axios.create({
-    baseURL: 'https://dummyjson.com/', // Your API base URL
+    baseURL: 'https://dummyjson.com/',
 });
 
 
@@ -9,15 +11,15 @@ axiosInstance.interceptors.request.use(
     config => {
         const token = localStorage.getItem('token');
         if (token) {
-            config.headers['Authorization'] = `Bearer ${token}`;
+            config.headers.Authorization = `Bearer ${token}`;
         }
         return config;
     },
     error => {
-        // Do something with request error
         return Promise.reject(error);
     }
 );
+
 
 axiosInstance.interceptors.response.use(
     response => {

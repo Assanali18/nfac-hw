@@ -1,3 +1,0 @@
-interface PostCardProps {
-    post: Post;
-}

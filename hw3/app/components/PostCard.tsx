@@ -4,7 +4,7 @@ import { Post } from '@/types';
 
 interface PostCardProps {
     post: Post;
-    isLast: boolean;
+    isLast?: boolean;
 }
 
 const PostCard: React.FC<PostCardProps> = ({ post, isLast }) => {

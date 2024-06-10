@@ -54,6 +54,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             const data = response.data;
             if (data.token) {
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('username', data.username);
                 setUser({ token: data.token });
                 window.location.href = '/';
             } else {

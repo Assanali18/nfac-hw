@@ -3,15 +3,18 @@ export interface Post{
     title: string;
     body: string;
     tags: string[];
-    reactions: {
+    reactions?: {
         likes: number;
         dislikes: number;
     };
-    views: number;
-    userId: number;
+    views?: number;
+    userId?: number;
     userName?: string;
 }
 
-export interface PostCardProps {
-    post: Post;
+export interface NewPost {
+    title: string;
+    body: string;
+    userId: number;
+    tags: string[];
 }

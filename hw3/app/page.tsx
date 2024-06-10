@@ -6,7 +6,7 @@ export default function Home() {
                 <div className="flex flex-wrap pt">
                     <div className="w-full">
                         <div className="py-16">
-                            <h1 className="text-4xl text-black font-bold leading-relaxed">Hello, world!</h1>
+                            <h1 className="text-4xl text-black font-bold dark:text-white">Hello, world!</h1>
                         </div>
                         <PostList/>
                     </div>
