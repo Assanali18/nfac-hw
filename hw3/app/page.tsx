@@ -2,7 +2,6 @@ import PostList from "@/app/components/PostList";
 
 export default function Home() {
     return (
-        <main>
             <div className="container">
                 <div className="flex flex-wrap pt">
                     <div className="w-full">
@@ -13,6 +12,5 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </main>
     );
 }

@@ -9,6 +9,7 @@ export interface Post{
     };
     views: number;
     userId: number;
+    userName?: string;
 }
 
 export interface PostCardProps {
