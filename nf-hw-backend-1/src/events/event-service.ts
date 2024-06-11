@@ -28,7 +28,17 @@ class EventService {
             const initialEvents = [
                 { name: "Art Fair", description: "Explore the latest works from local and international artists", date: new Date(), location: "Almaty, KBTU", duration: "10:00 AM - 6:00PM" },
                 { name: "Backend Lecture", description: "", date: new Date("2024-06-11"), location: "Almaty, Satbayev University", duration: "9:15 AM - 11:15AM" },
-                { name: "Demo Day", description: "", date: new Date("2024-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" }
+                { name: "Fronted Day", description: "", date: new Date("2024-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "A Day", description: "dsdasd", date: new Date("2024-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "B Day", description: "dasdas", date: new Date("2024-07-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "C Day", description: "egaewg", date: new Date("2024-06-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "D Day", description: "geaaeg", date: new Date("2024-05-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "E Day", description: "grearg", date: new Date("2024-03-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "F Day", description: "regear", date: new Date("2024-01-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "G Day", description: "ergaerg", date: new Date("2023-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "H Day", description: "ergaerg", date: new Date("2022-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "I Day", description: "aegra", date: new Date("2021-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
+                { name: "J Day", description: "aegaeg", date: new Date("2020-08-09"), location: "Almaty, Satbayev University", duration: "9:00 AM - 12:00 PM" },
             ];
             await EventModel.insertMany(initialEvents);
         }

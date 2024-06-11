@@ -22,26 +22,6 @@ class EventController {
         }
     };
 
-    // getEvents = async (req: Request, res: Response): Promise<void> => {
-    //     try {
-    //         const page = parseInt(req.query.page as string) || 1;
-    //         const limit = parseInt(req.query.limit as string) || 10;
-    //         const sortBy = req.query.sortBy as string || 'date';
-    //         const sortDirection = req.query.sortDirection as string || 'asc';
-
-    //         if (!['date', 'name'].includes(sortBy)) {
-    //             res.status(400).json({ error: "Invalid sortBy parameter" });
-    //         }
-    //         if (!['asc', 'desc'].includes(sortDirection)) {
-    //             res.status(400).json({ error: "Invalid sortDirection parameter" });
-    //         }
-    
-    //         const events = await this.eventService.getEvents(page, limit, sortBy, sortDirection);
-    //         res.status(200).json(events);
-    //     } catch (error: any) {
-    //         res.status(500).json({ error: error.message });
-    //     }
-    // };
 
     getEventById = async (req: Request, res: Response): Promise<void> => {
         try {
@@ -78,9 +58,11 @@ class EventController {
 
             if (!['date', 'name'].includes(sortBy)) {
                 res.status(400).json({ error: "Invalid sortBy parameter" });
+                return;
             }
             if (!['asc', 'desc'].includes(sortDirection)) {
                 res.status(400).json({ error: "Invalid sortDirection parameter" });
+                return;
             }
             
             const userCity = decoded.city;
