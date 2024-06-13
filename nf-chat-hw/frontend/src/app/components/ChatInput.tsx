@@ -4,7 +4,7 @@ import { Socket } from 'socket.io-client';
 
 interface ChatFooterProps {
     roomId: string;
-    typingStatus: string;
+    typingStatus?: string;
 }
 
 const ChatInput: React.FC<ChatFooterProps> = ({ roomId, typingStatus }) => {

@@ -11,7 +11,7 @@ export const SocketProvider: React.FC<PropsWithChildren<{}>> = ({ children }) =>
     const [socket, setSocket] = useState<Socket | null>(null);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') { // Ensure this runs only in the browser
+        if (typeof window !== 'undefined') {
             const userId = localStorage.getItem('id');
             const newSocket = io('https://nfac-hw-production-09a4.up.railway.app', { autoConnect: true, query: { userId } });
             setSocket(newSocket);
