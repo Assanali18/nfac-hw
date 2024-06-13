@@ -13,7 +13,7 @@ const useUserService = () => {
 
     const getAllUsers = async (): Promise<User[]> => {
         try {
-          const response = await axios.get('http://localhost:5000/api/v1/users');
+          const response = await axios.get('https://nfac-hw-production-09a4.up.railway.app/api/v1/users');
           return response.data;
         } catch (error) {
           console.error('Error fetching data:', error);

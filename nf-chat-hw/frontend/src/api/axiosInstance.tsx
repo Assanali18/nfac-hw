@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://nfac-hw-production-09a4.up.railway.app',
 });
 
 

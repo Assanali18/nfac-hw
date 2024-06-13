@@ -54,7 +54,7 @@ const ChatBody: React.FC = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       if (roomId) {
-        const response = await fetch(`http://localhost:5000/api/v1/messages/${roomId}`);
+        const response = await fetch(`https://nfac-hw-production-09a4.up.railway.app/api/v1/messages/${roomId}`);
         const data = await response.json();
         setMessages(data);
       }
