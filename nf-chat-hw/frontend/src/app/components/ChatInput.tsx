@@ -4,7 +4,7 @@ import { Socket } from 'socket.io-client';
 
 interface ChatFooterProps {
     roomId: string;
-    typingStatus?: string;
+    typingStatus: string;
 }
 
 const ChatInput: React.FC<ChatFooterProps> = ({ roomId, typingStatus }) => {
@@ -46,11 +46,7 @@ const ChatInput: React.FC<ChatFooterProps> = ({ roomId, typingStatus }) => {
                     value={message}
                     onChange={handleTyping}
                 />
-                {typingStatus && (
-                    <div className="absolute bottom-16  text-gray-500">
-                        <p>{typingStatus}</p>
-                    </div>
-                )}
+
                 <button type="submit"
                         className="sendBtn bg-blue-500 text-white p-2 rounded-r-md hover:bg-blue-600 transition duration-300">SEND
                 </button>

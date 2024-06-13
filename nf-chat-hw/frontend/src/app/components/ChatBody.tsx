@@ -101,7 +101,13 @@ const ChatBody: React.FC = () => {
                   <p className="text-gray-800">{message.text}</p>
                 </div>
             ))}
+
           </div>
+          {typingStatus && (
+              <div className="text-gray-500">
+                <p>{typingStatus}</p>
+              </div>
+          )}
         </div>
       </>
   );
