@@ -41,7 +41,7 @@ const ChatBody: React.FC = () => {
 
   const fetchUser = async (userId: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/users/${userId}`);
+      const response = await fetch(`https://nfac-hw-production-09a4.up.railway.app/api/v1/users/${userId}`);
       const data: User = await response.json();
       if (data.username) {
         setChatPartnerName(data.username);
