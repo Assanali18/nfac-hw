@@ -39,7 +39,7 @@ const ChatPage = () => {
         <div className="chat">
         <div className="chat__main">
             <ChatBody />
-            {roomId && <ChatInput roomId={roomId} />}
+            {roomId && <ChatInput roomId={roomId}/>}
         </div>
         </div>
         </>
