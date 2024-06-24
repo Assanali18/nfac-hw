@@ -7,7 +7,7 @@ import ChatMessage from './models/ChatMessage';
 const chatRouter = Router();
 const chatService = new ChatService();
 const chatController = new ChatController(chatService);
-const wss = new Server({ noServer: true });
+const wss = new Server();
 
 wss.on('connection', (ws: WebSocket) => {
   ws.on('message', async (message: string) => {
