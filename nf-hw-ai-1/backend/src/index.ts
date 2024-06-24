@@ -8,7 +8,6 @@ import cors from 'cors';
 import globalRouter from './global-router';
 import ChatService from "./chat/chat.service";
 import ChatController from "./chat/chat.controller";
-import ChatMessage from "./chat/models/ChatMessage";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
