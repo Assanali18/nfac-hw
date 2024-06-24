@@ -7,7 +7,7 @@ import ChatMessage from './models/ChatMessage';
 const chatRouter = Router();
 const chatService = new ChatService();
 const chatController = new ChatController(chatService);
-const wss = new Server();
+const wss = new Server({ noServer: true });
 
 wss.on('connection', (ws: WebSocket) => {
   ws.on('message', async (message: string) => {
@@ -18,6 +18,8 @@ wss.on('connection', (ws: WebSocket) => {
   ws.on('error', (error) => {
     console.error('WebSocket error:', error);
   });
+
+
 });
 
 chatRouter.get('/chat', (req, res) => {

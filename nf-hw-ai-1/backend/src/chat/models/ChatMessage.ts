@@ -10,7 +10,7 @@ const chatMessageSchema = new Schema<IChatMessage>({
     userMessage: { type: String, required: true },
     aiMessage: { type: String, required: true },
     createdAt: { type: Date, default: Date.now }
-});
+},  { timestamps: true });
 
 const ChatMessage = model<IChatMessage>('ChatMessage', chatMessageSchema);
 

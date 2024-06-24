@@ -1,4 +1,5 @@
 import ChatService from './chat.service';
+import { WebSocket } from 'ws';
 
 class ChatController {
   private chatService: ChatService;

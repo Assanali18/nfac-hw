@@ -22,8 +22,9 @@ class ChatService {
 
       callback({ message: '', isFinal: true });
     } catch (error) {
-      console.error('Error processing Gemini AI stream:', error);
-      throw new Error('Failed to process Gemini AI stream');
+      console.error('Error processing  stream:', error);
+      throw new Error('Failed to process  stream');
+      throw new Error('Failed to process  stream');
     }
   }
 }
